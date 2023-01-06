@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:insta_clone/pages/instahomebody.dart';
 class Instagramhome extends StatelessWidget {
   final topBar = new AppBar(
     backgroundColor: Colors.black,
@@ -23,56 +23,54 @@ class Instagramhome extends StatelessWidget {
     ],
   );
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: topBar,
-      body: Container(),
-      bottomNavigationBar:new Container(
-        
-        height:48,
-        alignment: Alignment.center,
-        child: BottomAppBar(
+  final bottombar=BottomAppBar(
          
-        
+        color: Colors.black,
           child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
-          
+        
           children: <Widget>[
             
             IconButton(
               
-               icon:Icon(Icons.home),
+               icon:Icon(Icons.home,color: Colors.white,),
                onPressed: (() {
                  
                }),
                ),
                IconButton(
-               icon:Icon(Icons.search),
+               icon:Icon(Icons.search,color: Colors.white),
                onPressed: (() {
                  
                }),
                ),
                IconButton(
-               icon:Icon(Icons.video_file),
+               icon:Icon(Icons.video_file,color: Colors.white),
                onPressed: (() {
                  
                }),
                ),
                IconButton(
-               icon:Icon(Icons.account_box),
+               icon:Icon(Icons.favorite_border_outlined ,color: Colors.white),
                onPressed: (() {
                  
                }),
                ),
                IconButton(
-               icon:Icon(Icons.account_box),
+               icon:Icon(Icons.account_box,color: Colors.white),
                onPressed: (() {
                  
                }),
                ),
           ],)
-          ),
-      ),
+          );
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: topBar,
+      body: instahomebody(),
+      bottomNavigationBar: bottombar
+      
 
     );
   }
