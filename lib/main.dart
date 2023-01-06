@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
     
       theme: ThemeData( 
-        primaryColor: Colors.black,
-        primaryIconTheme: IconThemeData(color:Colors.black),
-        primaryTextTheme: TextTheme(titleMedium: TextStyle(color:Colors.black,fontFamily: "Aveny")),
-        textTheme: TextTheme(headline1:TextStyle(color:Colors.black) ),
+        primaryColor: Colors.white,
+        primaryIconTheme: IconThemeData(color:Colors.white),
+        primaryTextTheme: TextTheme(titleMedium: TextStyle(color:Colors.white,fontFamily: "Aveny")),
+        textTheme: TextTheme(headline1:TextStyle(color:Colors.white) ),
       ),
       home:  Instagramhome(),
     );
