@@ -9,20 +9,16 @@ class postlist extends StatelessWidget {
       itemCount: 5,
       scrollDirection: Axis.vertical,
       itemBuilder: (context, index) => Container(
-        
-        child:Container(
-            width: 350,
-            height: 300,
-            decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage(
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlb4RdVNhWU7GYqtTGlQTThy4V57WVAGWR0w&usqp=CAU"))),
-           
-          ),
-        
-        
+        child: Container(
+          width: 350,
+          height: 300,
+          margin: EdgeInsets.only(bottom: 8),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: NetworkImage(
+                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlb4RdVNhWU7GYqtTGlQTThy4V57WVAGWR0w&usqp=CAU"))),
+        ),
       ),
     );
   }

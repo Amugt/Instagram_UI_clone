@@ -24,7 +24,7 @@ class storylist extends StatelessWidget {
             ),
             index ==0 ?Positioned(
               right: 4,
-              top:40,
+              top:30,
               child: CircleAvatar(backgroundColor: Colors.blue,
               radius: 10,
               child: Icon(Icons.add,size: 18,color: Colors.white,),),
