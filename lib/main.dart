@@ -11,12 +11,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Instagram',
       debugShowCheckedModeBanner: false,
-    
+
       theme: ThemeData( 
         primaryColor: Colors.white,
-        primaryIconTheme: IconThemeData(color:Colors.white),
-        primaryTextTheme: TextTheme(titleMedium: TextStyle(color:Colors.white,fontFamily: "Aveny")),
-        textTheme: TextTheme(headline1:TextStyle(color:Colors.white) ),
       ),
       home:  Instagramhome(),
     );

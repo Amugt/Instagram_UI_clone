@@ -11,7 +11,7 @@ class storylist extends StatelessWidget {
         itemCount: 5,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => Stack(
-          alignment: Alignment.bottmCenter,
+          alignment: Alignment.bottomCenter,
           children: [         
               Container(
               width: 70,
@@ -24,7 +24,6 @@ class storylist extends StatelessWidget {
             ),
             index ==0 ?Positioned(
               right: 4,
-              
               child: CircleAvatar(backgroundColor: Colors.blue,
               radius: 10,
               child: Icon(Icons.add,size: 18,color: Colors.white,),),

@@ -70,7 +70,7 @@ class Instagramhome extends StatelessWidget {
       appBar: topBar,
       body: instahomebody(),
       bottomNavigationBar: bottombar
-      
+
 
     );
   }
