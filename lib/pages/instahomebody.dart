@@ -10,21 +10,12 @@ class instahomebody extends StatelessWidget {
     return Container(
       color: Colors.black,
       child: Column(
-        
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          
           Flexible(
-            
             child: storylist(),
           ),
-            Expanded(
-              child:postlist(),
-     
-           
-          ),
-
-         ],
+        ],
       ),
     );
   }
