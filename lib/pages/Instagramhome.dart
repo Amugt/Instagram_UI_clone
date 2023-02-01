@@ -7,7 +7,7 @@ class Instagramhome extends StatelessWidget {
     centerTitle: false,
     elevation: 1.0,
     title: Text("Instagram",
-        style: TextStyle(fontFamily: "Playball", fontSize: 26)),
+        style: TextStyle(fontFamily: "Playball", fontSize: 28)),
     actions: <Widget>[
       Padding(
           padding: EdgeInsets.only(right: 12.0),

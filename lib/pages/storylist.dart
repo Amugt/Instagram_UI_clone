@@ -18,11 +18,12 @@ class storylist extends StatelessWidget {
               width: 66,
               height: 66,
               decoration: BoxDecoration(
+                  border: Border.all(color: Colors.deepOrange),
                   shape: BoxShape.circle,
                   image: DecorationImage(
                       fit: BoxFit.cover,
                       image: NetworkImage(
-                          "https://images.pexels.com/photos/4662950/pexels-photo-4662950.jpeg?auto=compress&cs=tinysrgb&w=600 "))),
+                          "https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=600"))),
               margin: EdgeInsets.symmetric(horizontal: 7),
             ),
             index == 0

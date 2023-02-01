@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class postlist extends StatelessWidget {
   const postlist({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+
     return Expanded(
 
       child: Padding(
         padding: const EdgeInsets.only(top: 8.0),
         child: ListView.builder(
-          itemCount: 5,
+          itemCount: 6,
           scrollDirection: Axis.vertical,
           itemBuilder: (context, index) => Container(
               child:Padding(
@@ -35,7 +38,7 @@ class postlist extends StatelessWidget {
                                     image: DecorationImage(
                                         fit: BoxFit.cover,
                                         image: NetworkImage(
-                                            "https://images.pexels.com/photos/2530775/pexels-photo-2530775.jpeg?auto=compress&cs=tinysrgb&w=600"))),
+                                            "https://images.pexels.com/photos/2829373/pexels-photo-2829373.jpeg?auto=compress&cs=tinysrgb&w=600"))),
                                 margin: EdgeInsets.symmetric(horizontal: 7),
                               ),
                               Text("Monique",style: TextStyle( fontSize: 22 , color: Colors.white)),
@@ -50,13 +53,13 @@ class postlist extends StatelessWidget {
                     ),
                     Container(
                       width:MediaQuery.of(context).size.width,
-                      height:MediaQuery.of(context).size.height*0.45,
+                      height:MediaQuery.of(context).size.height*0.52,
                       decoration: BoxDecoration(
 
                           image: DecorationImage(
                               fit: BoxFit.cover,
                               image: NetworkImage(
-                                  "https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?auto=compress&cs=tinysrgb&w=600"))),
+                                  "https://images.pexels.com/photos/2584269/pexels-photo-2584269.jpeg?auto=compress&cs=tinysrgb&w=600"))),
 
                     ),
                     Row(
@@ -67,7 +70,7 @@ class postlist extends StatelessWidget {
                           child: Row(
                             children: <Widget>[
                               IconButton(
-                                icon: Icon(Icons.favorite_border, color: Colors.white),
+                                icon: Icon(Icons.favorite_border_outlined, color: Colors.white),
                                 onPressed: (() {}),
                               ),
                               IconButton(
@@ -75,14 +78,14 @@ class postlist extends StatelessWidget {
                                 onPressed: (() {}),
                               ),
                               IconButton(
-                                icon: Icon(Icons.share, color: Colors.white),
+                                icon: Icon(FontAwesomeIcons.paperPlane,color: Colors.white),
                                 onPressed: (() {}),
                               ),
                             ],
                           ),
                         ),
                         IconButton(
-                          icon: Icon(Icons.bookmark, color: Colors.white),
+                          icon: Icon(Icons.bookmark_border_outlined, color: Colors.white),
                           onPressed: (() {}),
                         ),
                       ],
@@ -98,12 +101,30 @@ class postlist extends StatelessWidget {
                               image: DecorationImage(
                                   fit: BoxFit.cover,
                                   image: NetworkImage(
-                                      "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=600"))),
+                                      "https://images.pexels.com/photos/2772099/pexels-photo-2772099.jpeg?auto=compress&cs=tinysrgb&w=600"))),
                           margin: EdgeInsets.symmetric(horizontal: 5),
                         ),
                         Text("liked by Bernabas  and 182 others", style: TextStyle( color: Colors.white, fontSize: 17)),
+
                       ],
-                    )
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 33,
+                        child:  Text("Monique  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  ...", style: TextStyle( color: Colors.white, fontSize: 16)),
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 8.0),
+                          child: Text("See all 13 comments", style: TextStyle( color: Colors.grey, fontSize: 14)),
+                        ),
+                      ],
+                    ),
+
 
 
                   ],
