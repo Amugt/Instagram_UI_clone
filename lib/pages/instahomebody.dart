@@ -9,12 +9,18 @@ class instahomebody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.black,
+
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
+
         children: <Widget>[
-          Flexible(
-            child: storylist(),
+
+          Container(
+            height: 80,
+            child:  storylist(),
           ),
+          postlist(),
+
         ],
       ),
     );

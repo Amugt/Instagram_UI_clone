@@ -57,6 +57,8 @@ class Instagramhome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: topBar, body: instahomebody(), bottomNavigationBar: bottombar);
+        appBar: topBar,
+         body: instahomebody(),
+        bottomNavigationBar: bottombar);
   }
 }
